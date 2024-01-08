@@ -1,0 +1,2528 @@
+@font-face {
+    font-family: 'Bad Script';
+    font-weight: 400;
+    src: url('../fonts/Bad_Script/BadScript-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Yu Gothic';
+    font-weight: 700;
+    src: url('../fonts/Yu_Gothic/yugothib.ttf');
+}
+
+@font-face {
+    font-family: 'Yu Gothic';
+    font-weight: 500;
+    src: url('../fonts/yu-gothic-light/yugothil.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+    margin: 0;
+    padding: 0;
+}
+
+.flex-middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-custom {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+
+.lg {
+    display: block;
+}
+
+.sm {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .container-custom {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container-custom {
+        width: 940px;
+    }
+}
+
+.hero-section h2,
+.man-of-ability h2,
+.strength-section h2,
+.voice-of-achievers h2,
+.project-summary-section h2,
+.service-process-section h2,
+.faq-section h2,
+.what-style-kun-section h2 {
+    font-family: 'Bad Script';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 65.2712px;
+    line-height: 175%;
+    background: linear-gradient(270deg, #00D2FF -20.61%, #3A7BD5 93.33%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    transform: rotate(-5deg);
+    margin-top: 50px;
+    letter-spacing: 0.105em;
+    text-align: center;
+    position: relative;
+    left: -20%;
+
+}
+
+.man-of-ability h3,
+.strength-section h3,
+.voice-of-achievers h3,
+.project-summary-section h3,
+.service-process-section h3,
+.faq-section h3,
+.what-style-kun-section h3 {
+    font-family: 'Yu Gothic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 175%;
+    letter-spacing: 0.105em;
+    color: #333333;
+    text-align: center;
+    position: relative;
+    top: -15px;
+    margin-bottom: 20px;
+}
+
+/* Hero Section */
+
+.hero-section {
+    min-height: 400px;
+    background-image: url('/src/assets/images/AdobeStock_319972358 2.png');
+    background-size: 100% 100%;
+    position: relative;
+    z-index: 5;
+    overflow: hidden;
+}
+
+.hero-section .rectangle-bg {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+.hero-section .hero-title {
+    width: 65%;
+    position: absolute;
+    top: 50%;
+    left: -5%;
+    transform: translateY(-50%);
+    z-index: 3;
+}
+
+.hero-section .vector-img-left {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+.hero-section .vector-img-right {
+    width: 20%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+}
+
+.hero-section .content-wrapper {
+    min-height: 400px;
+    z-index: 5;
+    position: relative;
+}
+
+.hero-section .content-wrapper h2 {
+    -webkit-text-fill-color: white;
+    margin-top: 30px;
+    font-size: 60px;
+}
+
+.hero-section .content-wrapper h4 {
+    font-family: 'Yu Gothic';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+    vertical-align: middle;
+    position: relative;
+    left: 30%;
+    top: 85px;
+}
+
+.hero-section .last-btn-container {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.hero-section .last-btn-container .btn-left-wrapper {
+    position: relative;
+}
+
+.hero-section .last-btn-container .btn-left {
+    width: 308.17px;
+    height: 68.34px;
+    background: linear-gradient(90deg, #ED4264 -61.58%, #F36A70 -21.02%, #F33E23 3.26%, #FF7A00 100%),
+        rgba(51, 51, 51, 0.9);
+    box-shadow: 0px 2.62834px 5.25667px rgba(247, 77, 27, 0.3);
+    border-radius: 10.5133px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 20px;
+    align-items: center;
+    font-family: 'Yu Gothic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16.8787px;
+    line-height: 175%;
+    overflow: hidden;
+    color: white;
+}
+
+.hero-section .last-btn-container .uppar-section-img {
+    position: absolute;
+    right: -120px;
+    top: -77px;
+    display: flex;
+    align-items: center;
+}
+
+.hero-section .last-btn-container .btn-left .circle1 {
+    position: absolute;
+    top: -25px;
+    left: -50px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: rgb(255, 255, 255);
+    z-index: 7;
+}
+
+.hero-section .last-btn-container .btn-left .circle2 {
+    position: absolute;
+    top: -30px;
+    left: -50px;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: rgb(255, 255, 255, .6);
+    z-index: 6;
+}
+
+.hero-section .last-btn-container .btn-left .circle3 {
+    position: absolute;
+    top: -35px;
+    left: -50px;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .5);
+    z-index: 5;
+}
+
+
+.hero-section .last-btn-container .btn-grp {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.hero-section .last-btn-container .btn-grp .btn-upper,
+.hero-section .last-btn-container .btn-grp .btn-lower {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'A P-OTF UD Shin Go NT Pr6N';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 19.359px;
+    line-height: 165%;
+    color: #1B4884;
+}
+
+.hero-section .last-btn-container .btn-grp .btn-upper img,
+.hero-section .last-btn-container .btn-grp .btn-lower img {
+    margin: 0 3px 0 15px;
+}
+
+.hero-section .last-btn-container .btn-grp .btn-upper {
+    height: 44.91px;
+    background: rgba(255, 255, 255, 0.7);
+    margin-bottom: 12px;
+}
+
+.hero-section .last-btn-container .btn-grp .btn-lower {
+    height: 44.91px;
+    background: rgba(255, 255, 255, 0.7);
+    margin-bottom: 12px;
+    position: relative;
+    bottom: 0;
+}
+
+
+/* man-of-ability */
+
+.man-of-ability {
+    overflow: hidden;
+    min-height: 1036px;
+    position: relative;
+}
+
+.man-of-ability .vector-img {
+    position: absolute;
+    z-index: -1;
+}
+
+.man-of-ability .button-grp {
+    width: 294px;
+    height: 92px;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    z-index: 10;
+    position: fixed;
+}
+
+.man-of-ability .button-grp .left {
+    width: 50%;
+    background: linear-gradient(270deg, #F85318 -0.35%, #FF891C 99.65%);
+    border-radius: 8px 0px 0px 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.man-of-ability .button-grp span {
+    font-family: 'Yu Gothic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 130%;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 3px;
+}
+
+.man-of-ability .button-grp span.header {
+    font-family: 'Yu Gothic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 155%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    padding: 3px 12px;
+    background: #039A00;
+    border-radius: 13px;
+    display: inline-block;
+    margin-top: 0;
+}
+
+
+.man-of-ability .button-grp .right {
+    width: 50%;
+    background: linear-gradient(270deg, #3072F3 4.14%, #0EB5EF 102.07%);
+    border-radius: 0px 8px 8px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.man-of-ability .ability-item-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.man-of-ability .ability-item-container .ability-item {
+    width: 359px;
+    min-height: 294px;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 40px;
+    position: relative;
+    position: relative;
+}
+
+.man-of-ability .ability-item-container .ability-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid transparent;
+    background: linear-gradient(270deg, #00D2FF -20.61%, #3A7BD5 93.33%);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) padding-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+}
+
+.man-of-ability .ability-item-container .ability-item .number-circle {
+    width: 72px;
+    height: 72px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(109, 206, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    border-radius: 50%;
+}
+
+.man-of-ability .ability-item-container .ability-item .number-circle::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background: linear-gradient(270deg, #00D2FF -20.61%, #3A7BD5 93.33%);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) padding-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+}
+
+.man-of-ability .ability-item-container .ability-item .number-circle span {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 175%;
+    color: #081E3A;
+}
+
+.man-of-ability .ability-item-container .ability-item img {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+.man-of-ability .ability-item-container .content {
+    width: 100%;
+    max-width: 75%;
+}
+
+.man-of-ability .ability-item-container h4 {
+    font-family: 'Yu Gothic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 155%;
+    color: #081E3A;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Strength Section */
+.strength-section .strength-item-bg {
+    display: flex;
+    flex-direction: row-reverse;
+    background: linear-gradient(90deg, #73C5FF 0%, #5AE7FF 50%, rgba(188, 255, 231, 0) 100%);
+}
+
+.strength-section .strength-item {
+    margin-top: 40px;
+}
+
+.strength-section .strength-item:nth-child(even) .row {
+    flex-direction: row-reverse;
+}
+
+.strength-section .strength-item:nth-child(even) .row .strength-item-bg {
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(-270deg, rgba(0, 210, 255, 0) 0%, rgba(33, 120, 240, 0.44) 12.15%, #00D2FF 93.33%);
+}
+
+.strength-section .strength-item:nth-child(even) .row>div:nth-child(2) {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.strength-section .strength-item:last-child {
+    margin-bottom: 100px;
+}
+
+.strength-section .strength-item h4 {
+    font-family: 'Yu Gothic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 160%;
+    margin-top: 40px;
+}
+
+.strength-section .strength-item p {
+    font-family: 'Yu Gothic';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 175%;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.strength-section .strength-item img {
+    height: 245px;
+}
+
+
+/* Voice Of Achievers */
+
+.voice-of-achievers {
+    min-height: 1000px;
+    position: relative;
+}
+
+.voice-of-achievers .vector-img {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+}
+
+.voice-of-achievers .cat-sitting {
+    position: absolute;
+    bottom: -10%;
+    left: -30%;
+    z-index: -1;
+}
+
+.voice-of-achievers .achievers-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.voice-of-achievers .achievers-container .achiever {
+    width: 361px;
+    height: 184px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    margin: 30px 40px;
+}
+
+.voice-of-achievers .achievers-container .achiever::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid transparent;
+    background: linear-gradient(270deg, #00D2FF -20.61%, #3A7BD5 93.33%);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) padding-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+}
+
+.voice-of-achievers .achievers-container .achiever .tag {
+    position: absolute;
+    top: -5%;
+    left: -5%;
+    width: 76px;
+    height: 27px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(270deg, #00D2FF -20.61%, #3A7BD5 93.33%);
+    color: white;
+}
+
+.voice-of-achievers .achievers-container img {
+    width: 96px;
+    margin: 0 24px;
+}
+
+
+.voice-of-achievers .achievers-container .inner-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.voice-of-achievers .achievers-container .inner-content h4 {
+    font-family: 'Yu Gothic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 155%;
+    color: #666666;
+    margin-bottom: 5px;
+
+}
+
+.voice-of-achievers .achievers-container .inner-content p {
+    font-family: 'Yu Gothic';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 155%;
+    color: #333333;
+    margin-bottom: 5px;
+
+}
+
+.voice-of-achievers .achievers-container .inner-content h5 {
+    font-family: 'Yu Gothic';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 155%;
+    color: #333333;
+}
+
+/* Service Process Section */
+
+.service-process-section {
+    min-height: 760px;
+}
+
+.service-process-section .card-container {
+    min-height: 406px;
+    background: linear-gradient(90deg, #FFFFFF 0.97%, rgba(255, 255, 255, 0) 14.89%, rgba(255, 255, 255, 0) 83.49%, #FFFFFF 100%);
+}
+
+.service-process-section .card-container .service-item {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    margin: 70px 0;
+}
+
+.service-process-section .card-container .service-item-card {
+    /* width: 276px; */
+    min-height: 352px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 40px rgba(109, 206, 255, 0.5);
+    position: relative;
+    /* overflow: hidden; */
+    padding: 0 15px;
+}
+
+.service-process-section .card-container .service-item-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    background: linear-gradient(270deg, #00D2FF -20.61%, #3A7BD5 93.33%);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) padding-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+}
+
+.service-process-section .card-container .service-item-card .number-circle {
+    width: 84px;
+    height: 84px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(109, 206, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -45px;
+    left: -45px;
+    border-radius: 50%;
+}
+
+.service-process-section .card-container .service-item-card .number-circle::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background: linear-gradient(270deg, #00D2FF -20.61%, #3A7BD5 93.33%);
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+
+}
+
+.service-process-section .card-container .service-item-card .number-circle span {
+    font-family: 'Bahiana';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    background: linear-gradient(270deg, #00D2FF -20.61%, #3A7BD5 93.33%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    color: #081E3A;
+}
+
+.service-process-section .card-container .service-item-card-header {
+    min-height: 91px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-process-section .card-container .service-item-card-header h4 {
+    font-family: 'Yu Gothic';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 175%;
+    background: linear-gradient(270deg, #00D2FF -20.61%, #3A7BD5 93.33%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.service-process-section .card-container .service-item-card .contant {
+    height: calc(352px - 91px);
+    overflow: hidden;
+}
+
+.service-process-section .swiper-button-next,
+.service-process-section .swiper-button-prev {
+    top: 45%;
+}
+
+.service-process-section .swiper-button-next::after,
+.service-process-section .swiper-button-prev::after {
+    content: '';
+}
+
+.service-process-section .swiper-button-next {
+    right: 35.5%;
+}
+
+.service-process-section .swiper-button-prev {
+    left: 35.5%;
+}
+
+.service-process-section .card-container img {
+    width: 244px;
+    height: 100%;
+}
+
+/* Project Summary Section */
+
+.project-summary-section {
+    min-height: 640px;
+    background: linear-gradient(180deg, #FFFFFF 17.71%, rgba(255, 255, 255, 0) 100%),
+        linear-gradient(0deg, rgba(56, 61, 64, 0.92), rgba(56, 61, 64, 0.92)),
+        url(.jpg);
+    background-blend-mode: normal,
+        overlay,
+        normal;
+}
+
+.project-summary-section .project-summary-items-container {
+    padding: 20px 0 30px 0;
+}
+
+.project-summary-section .summary-item {
+    background-color: white;
+    position: relative;
+    padding: 20px 16px;
+    border: none !important;
+    box-shadow: 0px 0px 40px rgba(109, 206, 255, 0.5);
+}
+
+.project-summary-section .summary-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: .5px solid transparent;
+    background: linear-gradient(45deg, rgba(0, 210, 255, 1), rgba(58, 123, 213, 1)) border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+}
+
+
+.project-summary-section .summary-item .tag {
+    font-family: 'Yu Gothic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 175%;
+    width: 95px;
+    height: 19px;
+    background: #081E3A;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.project-summary-section .summary-item h4 {
+    font-family: 'Yu Gothic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 155%;
+    color: #333333;
+}
+
+.project-summary-section .summary-item h5 {
+    font-family: 'Yu Gothic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 155%;
+    color: #666666;
+}
+
+.project-summary-section .summary-item p {
+    font-family: 'Yu Gothic';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 155%;
+    color: #333333;
+}
+
+/* FAQ Section */
+
+.faq-section {
+    min-height: 1000px;
+    background: #E6F7FF;
+}
+
+.faq-section h2 {
+    left: -15%;
+}
+
+.faq-section .accordion .card {
+    margin-bottom: 24px;
+    box-shadow: 0px 0px 40px rgba(109, 206, 255, 0.5);
+}
+
+.faq-section .accordion .card:last-child {
+    margin-bottom: 120px;
+}
+
+.faq-section .accordion .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+
+.faq-section .accordion .left {
+    display: flex;
+    align-items: center;
+}
+
+.faq-section .accordion .question-logo {
+    padding: 4px 9px;
+    background: linear-gradient(270deg, #00D2FF -20.61%, #3A7BD5 93.33%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 24px;
+}
+
+.faq-section .accordion .question-logo h1 {
+    font-family: 'Bahnschrift';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.105em;
+    color: #FFFFFF;
+}
+
+.faq-section .accordion .right img {
+    margin: 32px;
+    width: 22px;
+    height: 22px;
+}
+
+.faq-section .accordion h4 {
+    font-family: 'Yu Gothic';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 29px;
+    font-feature-settings: 'palt'on;
+    color: #333333;
+}
+
+/* What's Style Kun Section */
+.what-style-kun-section {
+    position: relative;
+    min-height: 875px;
+}
+
+.what-style-kun-section .vector-img {
+    width: 681px;
+    height: 463px;
+    position: absolute;
+    left: -8.22%;
+    right: 69.93%;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.what-style-kun-section .inner-section {
+    position: relative;
+}
+
+.what-style-kun-section .inner-section img {
+    top: -45px;
+    position: relative;
+}
+
+.what-style-kun-section .inner-section .inner-content-section {
+    position: absolute;
+    width: 439px;
+    min-height: 435px;
+    right: 0;
+    top: 115px;
+    background: linear-gradient(90deg, #00D2FF -34.91%, #3A7BD5 57.72%);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.what-style-kun-section .inner-section .inner-content-section ul {
+    min-height: 355px;
+    max-width: 359px;
+    width: 100%;
+}
+
+.what-style-kun-section .inner-section .inner-content-section li {
+    font-family: 'Yu Gothic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 170%;
+    color: white;
+}
+
+/* Footer Section */
+
+.footer-section {
+    min-height: 625px;
+    background: linear-gradient(291.14deg, #081E3A 22.79%, #043E50 68.78%, #00676D 91.06%);
+}
+
+.footer-section .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-section .logo {
+    width: 73.59px;
+    height: 78.63px;
+    border: 2.63855px solid #FFFFFF;
+    border-radius: 3.51807px;
+}
+
+.footer-section .logo h2 {
+    color: #FFFFFF;
+    font-family: 'A P-OTF LapisMelt Min2';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28.1446px;
+    line-height: 115%;
+    letter-spacing: -0.04em;
+    font-feature-settings: 'vrt2'on,
+        'vkrn'on;
+}
+
+.footer-section h3 {
+    font-family: 'Yu Gothic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 32px;
+    color: #FFFFFF;
+    margin-top: 68.37px;
+}
+
+.footer-section p {
+    font-family: 'Yu Gothic';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 170%;
+    color: #FFFFFF;
+    margin-top: 40px;
+}
+
+.footer-section h4 {
+    font-family: 'Yu Gothic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 21px;
+    color: #FFFFFF;
+    margin-top: 80px;
+
+}
+
+
+@media(min-width:990px) and (max-width:1435px) {
+    .voice-of-achievers {
+        min-height: 1147px;
+    }
+
+    .voice-of-achievers .cat-sitting {
+        position: absolute;
+        bottom: -40%;
+        left: -5%;
+    }
+}
+
+@media (min-width:768px) and (max-width:990px) {
+
+    .man-of-ability h2,
+    .strength-section h2,
+    .voice-of-achievers h2,
+    .project-summary-section h2,
+    .service-process-section h2,
+    .faq-section h2,
+    .what-style-kun-section h2 {
+        font-size: 45px;
+        margin-top: 30px;
+    }
+
+    .man-of-ability h3,
+    .strength-section h3,
+    .voice-of-achievers h3,
+    .project-summary-section h3,
+    .service-process-section h3,
+    .faq-section h3,
+    .what-style-kun-section h3 {
+        font-size: 18px;
+        top: -10px;
+        margin-bottom: 30px;
+    }
+
+    /* Hero Section */
+
+    .hero-section {
+        min-height: 400px;
+        background-image: url('/src/assets/images/AdobeStock_319972358 2.png');
+        background-size: 100% 100%;
+        position: relative;
+        z-index: 5;
+        overflow: hidden;
+    }
+
+    .hero-section .rectangle-bg {
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        z-index: 1;
+    }
+
+    .hero-section .hero-title {
+        width: 65%;
+        height: 130px;
+        position: absolute;
+        top: 50%;
+        left: -60px;
+        transform: translateY(-50%);
+        z-index: 3;
+    }
+
+    .hero-section .vector-img-left {
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 2;
+    }
+
+    .hero-section .vector-img-right {
+        width: 20%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 2;
+    }
+
+    .hero-section .content-wrapper {
+        min-height: 400px;
+        z-index: 5;
+        position: relative;
+    }
+
+    .hero-section .content-wrapper h2 {
+        -webkit-text-fill-color: white;
+        margin-top: 30px;
+        font-size: 50px;
+        position: relative;
+        top: 50px;
+    }
+
+    .hero-section .content-wrapper h4 {
+        font-family: 'Yu Gothic';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 130%;
+        vertical-align: middle;
+        position: relative;
+        left: 27%;
+        top: 99px;
+
+    }
+
+    .hero-section .last-btn-container {
+        display: flex;
+        justify-content: space-around;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+    }
+
+    .hero-section .last-btn-container .btn-left-wrapper {
+        position: relative;
+    }
+
+    .hero-section .last-btn-container .btn-left {
+        width: 308.17px;
+        height: 68.34px;
+        background: linear-gradient(90deg, #ED4264 -61.58%, #F36A70 -21.02%, #F33E23 3.26%, #FF7A00 100%),
+            rgba(51, 51, 51, 0.9);
+        box-shadow: 0px 2.62834px 5.25667px rgba(247, 77, 27, 0.3);
+        border-radius: 10.5133px;
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        padding: 0 20px;
+        align-items: center;
+        font-family: 'Yu Gothic';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16.8787px;
+        line-height: 175%;
+        overflow: hidden;
+        color: white;
+    }
+
+    .hero-section .last-btn-container .uppar-section-img {
+        position: absolute;
+        right: -87px;
+        top: -65px;
+        display: flex;
+        align-items: center;
+    }
+
+    .hero-section .last-btn-container .uppar-section-img img:nth-child(2) {
+        width: 98px;
+        height: 98px;
+    }
+
+    .hero-section .last-btn-container .btn-left .circle1 {
+        position: absolute;
+        top: -25px;
+        left: -50px;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        background: rgb(255, 255, 255);
+        z-index: 7;
+    }
+
+    .hero-section .last-btn-container .btn-left .circle2 {
+        position: absolute;
+        top: -30px;
+        left: -50px;
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        background: rgb(255, 255, 255, .6);
+        z-index: 6;
+    }
+
+    .hero-section .last-btn-container .btn-left .circle3 {
+        position: absolute;
+        top: -35px;
+        left: -50px;
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, .5);
+        z-index: 5;
+    }
+
+
+    .hero-section .last-btn-container .btn-grp {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .hero-section .last-btn-container .btn-grp .btn-upper,
+    .hero-section .last-btn-container .btn-grp .btn-lower {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'A P-OTF UD Shin Go NT Pr6N';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 19.359px;
+        line-height: 165%;
+        color: #1B4884;
+    }
+
+    .hero-section .last-btn-container .btn-grp .btn-upper img,
+    .hero-section .last-btn-container .btn-grp .btn-lower img {
+        margin: 0 3px 0 15px;
+    }
+
+    .hero-section .last-btn-container .btn-grp .btn-upper {
+        height: 44.91px;
+        background: rgba(255, 255, 255, 0.7);
+        margin-bottom: 12px;
+    }
+
+    .hero-section .last-btn-container .btn-grp .btn-lower {
+        height: 44.91px;
+        background: rgba(255, 255, 255, 0.7);
+        margin-bottom: 12px;
+        position: relative;
+        bottom: 0;
+    }
+
+
+    /* Man of Ability */
+
+    .man-of-ability .ability-item-container .ability-item {
+        width: 287px;
+        min-height: 235px;
+        margin: 30px;
+    }
+
+    /* Voice Of Achievers */
+    .voice-of-achievers {
+        min-height: 1099px
+    }
+
+    .voice-of-achievers .vector-img {
+        position: absolute;
+        z-index: -1;
+        height: 100%;
+    }
+
+    .voice-of-achievers .cat-sitting {
+        position: absolute;
+        bottom: -45%;
+        left: -5%;
+    }
+
+    .voice-of-achievers .achievers-container .achiever {
+        width: 340px;
+        height: 184px;
+        margin: 20px 10px;
+    }
+
+    .voice-of-achievers .achievers-container .achiever .tag {
+        width: 68px;
+        height: 24px;
+    }
+
+    .voice-of-achievers .achievers-container img {
+        width: 86.69px;
+        margin: 0 21px;
+    }
+
+    .voice-of-achievers .achievers-container .inner-content h4 {
+        font-size: 14.4488px;
+    }
+
+    .voice-of-achievers .achievers-container .inner-content p {
+        font-size: 12.6427px;
+    }
+
+    .voice-of-achievers .achievers-container .inner-content h5 {
+        font-size: 14.4488px;
+    }
+
+    /* What's Style Kun Section */
+
+    .what-style-kun-section .inner-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .what-style-kun-section .inner-section img {
+        top: -100px;
+        left: -100px;
+        position: relative;
+    }
+
+    .what-style-kun-section .inner-section .inner-content-section {
+        min-height: 322px;
+        width: 300px;
+        top: 300px;
+    }
+
+    .what-style-kun-section .inner-section .inner-content-section ul {
+        min-height: 267px;
+        max-width: 262px;
+        width: 100%;
+    }
+
+    .what-style-kun-section .inner-section .inner-content-section li {
+        font-size: 14.89px;
+    }
+}
+
+@media (min-width:580px) and (max-width:767px) {
+
+    .man-of-ability h2,
+    .strength-section h2,
+    .voice-of-achievers h2,
+    .project-summary-section h2,
+    .service-process-section h2,
+    .faq-section h2,
+    .what-style-kun-section h2 {
+        font-size: 45px;
+    }
+
+    .man-of-ability h3,
+    .strength-section h3,
+    .voice-of-achievers h3,
+    .project-summary-section h3,
+    .service-process-section h3,
+    .faq-section h3,
+    .what-style-kun-section h3 {
+        font-size: 20px;
+        top: 0;
+        margin-bottom: 30px;
+    }
+
+    .lg {
+        display: none;
+    }
+
+    .sm {
+        display: block;
+    }
+
+    /* Hero Section */
+
+    .hero-section.sm {
+        min-height: 608px;
+        background-image: url('/src/assets/images/AdobeStock_319972358 3.png');
+        background-size: 100% 100%;
+        position: relative;
+        z-index: 5;
+        overflow: hidden;
+    }
+
+    .hero-section.sm .rectangle-bg {
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        z-index: 1;
+        left: -15%;
+    }
+
+    .hero-section.sm .hero-title {
+        width: 100%;
+        height: 130px;
+        position: absolute;
+        top: 33%;
+        left: -10%;
+        transform: translateY(-50%);
+        z-index: 3;
+    }
+
+    .hero-section.sm .vector-img-left {
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 2;
+    }
+
+    .hero-section.sm .vector-img-right {
+        width: 35%;
+        position: absolute;
+        right: 0;
+        top: 10%;
+        z-index: 2;
+    }
+
+    .hero-section.sm .content-wrapper {
+        min-height: 580px;
+        z-index: 5;
+        position: relative;
+    }
+
+    .hero-section.sm .inner-text {
+        min-height: 105px;
+        position: relative;
+    }
+
+    .hero-section.sm .content-wrapper h2 {
+        -webkit-text-fill-color: white;
+        margin-top: 90px;
+        font-size: 50px;
+    }
+
+    .hero-section.sm .content-wrapper h3 {
+        font-family: 'Yu Gothic';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 120%;
+        color: white;
+    }
+
+    .hero-section.sm .content-wrapper h4 {
+        font-family: 'Yu Gothic';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 130%;
+        vertical-align: middle;
+        position: relative;
+        bottom: 0;
+        top: -30px;
+        left: 140px;
+        right: 0;
+    }
+
+    .hero-section.sm .last-btn-container {
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        bottom: 0;
+        height: 300px;
+        margin-bottom: 60px;
+    }
+
+    .hero-section.sm .last-btn-container .btn-left-wrapper {
+        position: relative;
+    }
+
+    .hero-section.sm .last-btn-container .btn-left {
+        width: 263px;
+        height: 58.34px;
+        background: linear-gradient(90deg, #ED4264 -61.58%, #F36A70 -21.02%, #F33E23 3.26%, #FF7A00 100%),
+            rgba(51, 51, 51, 0.9);
+        box-shadow: 0px 2.62834px 5.25667px rgba(247, 77, 27, 0.3);
+        border-radius: 10.5133px;
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        padding: 0 10px;
+        align-items: center;
+        font-family: 'Yu Gothic';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14.4499px;
+        line-height: 175%;
+        /* overflow: hidden; */
+        color: white;
+    }
+
+    .hero-section.sm .last-btn-container .uppar-section-img {
+        position: absolute;
+        right: -55px;
+        top: -47px;
+        display: flex;
+        align-items: center;
+    }
+
+    .hero-section.sm .last-btn-container .uppar-section-img img:nth-child(2) {
+        width: 63.44px;
+        height: 63.44px;
+    }
+
+    .hero-section.sm .last-btn-container .btn-left .circle1 {
+        position: absolute;
+        top: -22px;
+        left: -34px;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background: rgb(255, 255, 255);
+        z-index: 7;
+    }
+
+    .hero-section.sm .last-btn-container .btn-left .circle2 {
+        position: absolute;
+        top: -27px;
+        left: -38px;
+        width: 110px;
+        height: 110px;
+        border-radius: 50%;
+        background: rgb(255, 255, 255, .6);
+        z-index: 6;
+    }
+
+    .hero-section.sm .last-btn-container .btn-left .circle3 {
+        position: absolute;
+        top: -37px;
+        left: -52px;
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, .5);
+        z-index: 5;
+    }
+
+
+    .hero-section.sm .last-btn-container .btn-grp {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .hero-section.sm .last-btn-container .btn-grp .btn-upper,
+    .hero-section.sm .last-btn-container .btn-grp .btn-lower {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'A P-OTF UD Shin Go NT Pr6N';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 19.359px;
+        line-height: 165%;
+        color: #1B4884;
+    }
+
+    .hero-section.sm .last-btn-container .btn-grp .btn-upper img,
+    .hero-section.sm .last-btn-container .btn-grp .btn-lower img {
+        margin: 0 3px 0 15px;
+    }
+
+    .hero-section.sm .last-btn-container .btn-grp .btn-upper {
+        height: 44.91px;
+        background: rgba(255, 255, 255, 0.7);
+        margin-bottom: 12px;
+    }
+
+    .hero-section.sm .last-btn-container .btn-grp .btn-lower {
+        height: 44.91px;
+        background: rgba(255, 255, 255, 0.7);
+        margin-bottom: 12px;
+        position: relative;
+        bottom: 0;
+    }
+
+    /* Man of Ability */
+    .man-of-ability .ability-item-container .ability-item {
+        width: 287px;
+        min-height: 235px;
+        margin: 20px;
+    }
+
+    .man-of-ability .button-grp {
+        width: 150px;
+        min-height: 155px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .man-of-ability .button-grp .left {
+        width: 100%;
+        border-radius: 8px 8px 0px 0px;
+    }
+
+    .man-of-ability .button-grp span {
+        font-size: 14px;
+        line-height: 130%;
+        margin-bottom: 12px;
+        margin-top: 5px;
+    }
+
+    .man-of-ability .button-grp span.header {
+        font-size: 12px;
+        line-height: 155%;
+        padding: 2px 12px;
+        margin-top: 12px;
+        margin-bottom: 0;
+    }
+
+    .man-of-ability .button-grp .right {
+        width: 100%;
+        border-radius: 0px 0px 8px 8px;
+    }
+
+    /* Voice Of Achievers */
+
+    .voice-of-achievers .vector-img {
+        position: absolute;
+        z-index: -1;
+        height: 100%;
+    }
+
+    .voice-of-achievers .cat-sitting {
+        position: absolute;
+        bottom: -45%;
+        left: -5%;
+    }
+
+    .voice-of-achievers .achievers-container .achiever {
+        width: 300px;
+        height: 166.16px;
+        margin: 20px 10px;
+    }
+
+    .voice-of-achievers .achievers-container .achiever .tag {
+        width: 68px;
+        height: 24px;
+    }
+
+    .voice-of-achievers .achievers-container img {
+        width: 86.69px;
+        margin: 0 21px;
+    }
+
+    .voice-of-achievers .achievers-container .inner-content h4 {
+        font-size: 14.4488px;
+    }
+
+    .voice-of-achievers .achievers-container .inner-content p {
+        font-size: 12.6427px;
+    }
+
+    .voice-of-achievers .achievers-container .inner-content h5 {
+        font-size: 14.4488px;
+    }
+
+    /* What's Style Kun Section */
+    .what-style-kun-section .vector-img {
+        width: 100%;
+    }
+
+    .what-style-kun-section .inner-section img {
+        top: -100px;
+        left: -100px;
+        position: relative;
+    }
+
+    .what-style-kun-section .inner-section .inner-content-section {
+        min-height: 322px;
+        width: 300px;
+        top: 300px;
+    }
+
+    .what-style-kun-section .inner-section .inner-content-section ul {
+        min-height: 267px;
+        max-width: 262px;
+        width: 100%;
+    }
+
+    .what-style-kun-section .inner-section .inner-content-section li {
+        font-size: 14.89px;
+    }
+}
+
+@media (max-width:579px) {
+
+    .hero-section h2,
+    .man-of-ability h2,
+    .strength-section h2,
+    .voice-of-achievers h2,
+    .project-summary-section h2,
+    .service-process-section h2,
+    .faq-section h2,
+    .what-style-kun-section h2 {
+        font-size: 35px;
+        margin-top: 30px;
+        left: 0%;
+        text-align: center;
+    }
+
+    .man-of-ability h3,
+    .strength-section h3,
+    .voice-of-achievers h3,
+    .project-summary-section h3,
+    .service-process-section h3,
+    .faq-section h3,
+    .what-style-kun-section h3 {
+        font-size: 18px;
+        top: 0;
+        margin-bottom: 30px;
+    }
+
+    .lg {
+        display: none;
+    }
+
+    .sm {
+        display: block;
+    }
+
+
+    /* Hero Section */
+
+    .hero-section.sm {
+        min-height: 608px;
+        background-image: url('/src/assets/images/AdobeStock_319972358 3.png');
+        background-size: 100% 100%;
+        position: relative;
+        z-index: 5;
+        overflow: hidden;
+    }
+
+    .hero-section.sm .rectangle-bg {
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        z-index: 1;
+        left: -15%;
+    }
+
+    .hero-section.sm .hero-title {
+        width: 100%;
+        height: 130px;
+        position: absolute;
+        top: 33%;
+        left: -10%;
+        transform: translateY(-50%);
+        z-index: 3;
+    }
+
+    .hero-section.sm .vector-img-left {
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 2;
+    }
+
+    .hero-section.sm .vector-img-right {
+        width: 35%;
+        position: absolute;
+        right: 0;
+        top: 10%;
+        z-index: 2;
+    }
+
+    .hero-section.sm .content-wrapper {
+        min-height: 580px;
+        z-index: 5;
+        position: relative;
+    }
+
+    .hero-section.sm .inner-text {
+        min-height: 105px;
+        position: relative;
+    }
+
+    .hero-section.sm .content-wrapper h2 {
+        -webkit-text-fill-color: white;
+        margin-top: 90px;
+        font-size: 50px;
+    }
+
+    .hero-section.sm .content-wrapper h3 {
+        font-family: 'Yu Gothic';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 120%;
+        color: white;
+    }
+
+    .hero-section.sm .content-wrapper h4 {
+        font-family: 'Yu Gothic';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 130%;
+        vertical-align: middle;
+        position: relative;
+        bottom: 0;
+        top: -30px;
+        left: 140px;
+        right: 0;
+    }
+
+    .hero-section.sm .last-btn-container {
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        bottom: 0;
+        height: 300px;
+        margin-bottom: 60px;
+    }
+
+    .hero-section.sm .last-btn-container .btn-left-wrapper {
+        position: relative;
+    }
+
+    .hero-section.sm .last-btn-container .btn-left {
+        width: 263px;
+        height: 58.34px;
+        background: linear-gradient(90deg, #ED4264 -61.58%, #F36A70 -21.02%, #F33E23 3.26%, #FF7A00 100%),
+            rgba(51, 51, 51, 0.9);
+        box-shadow: 0px 2.62834px 5.25667px rgba(247, 77, 27, 0.3);
+        border-radius: 10.5133px;
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        padding: 0 10px;
+        align-items: center;
+        font-family: 'Yu Gothic';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14.4499px;
+        line-height: 175%;
+        /* overflow: hidden; */
+        color: white;
+    }
+
+    .hero-section.sm .last-btn-container .uppar-section-img {
+        position: absolute;
+        right: -55px;
+        top: -47px;
+        display: flex;
+        align-items: center;
+    }
+
+    .hero-section.sm .last-btn-container .uppar-section-img img:nth-child(2) {
+        width: 63.44px;
+        height: 63.44px;
+    }
+
+    .hero-section.sm .last-btn-container .btn-left .circle1 {
+        position: absolute;
+        top: -22px;
+        left: -34px;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background: rgb(255, 255, 255);
+        z-index: 7;
+    }
+
+    .hero-section.sm .last-btn-container .btn-left .circle2 {
+        position: absolute;
+        top: -27px;
+        left: -38px;
+        width: 110px;
+        height: 110px;
+        border-radius: 50%;
+        background: rgb(255, 255, 255, .6);
+        z-index: 6;
+    }
+
+    .hero-section.sm .last-btn-container .btn-left .circle3 {
+        position: absolute;
+        top: -37px;
+        left: -52px;
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, .5);
+        z-index: 5;
+    }
+
+
+    .hero-section.sm .last-btn-container .btn-grp {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .hero-section.sm .last-btn-container .btn-grp .btn-upper,
+    .hero-section.sm .last-btn-container .btn-grp .btn-lower {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'A P-OTF UD Shin Go NT Pr6N';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 19.359px;
+        line-height: 165%;
+        color: #1B4884;
+    }
+
+    .hero-section.sm .last-btn-container .btn-grp .btn-upper img,
+    .hero-section.sm .last-btn-container .btn-grp .btn-lower img {
+        margin: 0 3px 0 15px;
+    }
+
+    .hero-section.sm .last-btn-container .btn-grp .btn-upper {
+        height: 44.91px;
+        background: rgba(255, 255, 255, 0.7);
+        margin-bottom: 12px;
+    }
+
+    .hero-section.sm .last-btn-container .btn-grp .btn-lower {
+        height: 44.91px;
+        background: rgba(255, 255, 255, 0.7);
+        margin-bottom: 12px;
+        position: relative;
+        bottom: 0;
+    }
+
+    /* man-of-ability */
+
+    .man-of-ability {
+        min-height: auto;
+    }
+
+    .man-of-ability .vector-img {
+        position: absolute;
+        z-index: -1;
+        height: 100%;
+    }
+
+    .man-of-ability .button-grp {
+        width: 150px;
+        min-height: 155px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .man-of-ability .button-grp .left {
+        width: 100%;
+        border-radius: 8px 8px 0px 0px;
+    }
+
+    .man-of-ability .button-grp span {
+        font-size: 14px;
+        line-height: 130%;
+        margin-bottom: 12px;
+        margin-top: 5px;
+    }
+
+    .man-of-ability .button-grp span.header {
+        font-size: 12px;
+        line-height: 155%;
+        padding: 2px 12px;
+        margin-top: 12px;
+        margin-bottom: 0;
+    }
+
+    .man-of-ability .button-grp .right {
+        width: 100%;
+        border-radius: 0px 0px 8px 8px;
+    }
+
+    .man-of-ability .ability-item-container .ability-item {
+        width: 287px;
+        min-height: 235px;
+        margin: 25px 0;
+    }
+
+    .man-of-ability .ability-item-container .ability-item .number-circle {
+        width: 57.56px;
+        height: 57.56px;
+    }
+
+    .man-of-ability .ability-item-container .ability-item .number-circle span {
+        font-size: 39.9721px;
+        line-height: 175%;
+    }
+
+    .man-of-ability .ability-item-container .ability-item img {
+        margin-bottom: 16px;
+        max-height: 163.09px;
+    }
+
+    .man-of-ability .ability-item-container h4 {
+        font-size: 12.7911px;
+        line-height: 155%;
+    }
+
+    /* Strength Section */
+
+    .strength-section .strength-item h4 {
+        font-size: 24px;
+        margin-top: 40px;
+    }
+
+    .strength-section .strength-item p {
+        margin-top: 25px;
+        margin-bottom: 30px;
+    }
+
+    .strength-section .strength-item img {
+        height: 245px;
+    }
+
+    /* Voice Of Achievers */
+
+    .voice-of-achievers .vector-img {
+        position: absolute;
+        z-index: -1;
+        height: 100%;
+    }
+
+    .voice-of-achievers .cat-sitting {
+        width: 100%;
+        position: relative;
+        margin-top: -100px;
+        left: 0;
+    }
+
+    .voice-of-achievers .achievers-container .achiever {
+        width: 326px;
+        height: 166.16px;
+        margin: 30px 0;
+    }
+
+    .voice-of-achievers .achievers-container .achiever .tag {
+        width: 68px;
+        height: 24px;
+    }
+
+    .voice-of-achievers .achievers-container img {
+        width: 86.69px;
+        margin: 0 21px;
+    }
+
+    .voice-of-achievers .achievers-container .inner-content h4 {
+        font-size: 14.4488px;
+    }
+
+    .voice-of-achievers .achievers-container .inner-content p {
+        font-size: 12.6427px;
+    }
+
+    .voice-of-achievers .achievers-container .inner-content h5 {
+        font-size: 14.4488px;
+    }
+
+    /* Project Summary */
+
+    .project-summary-section .summary-item {
+        margin: 15px 0;
+    }
+
+    .project-summary-section .summary-item .tag {
+        font-size: 5.95315px;
+        width: 40.21px;
+        height: 8.4px;
+        margin-bottom: 5px;
+    }
+
+    .project-summary-section .summary-item h4 {
+        font-size: 7.8036px;
+    }
+
+    .project-summary-section .summary-item h5 {
+        font-size: 7.95315px;
+    }
+
+    .project-summary-section .summary-item p {
+        font-size: 6.5px;
+    }
+
+    /* Service Process Section */
+
+    .service-process-section {
+        min-height: 760px;
+    }
+
+
+    .service-process-section .card-container {
+        min-height: 406px;
+        background: linear-gradient(90deg, #FFFFFF 0.97%, rgba(255, 255, 255, 0) 14.89%, rgba(255, 255, 255, 0) 83.49%, #FFFFFF 100%);
+    }
+
+    .service-process-section .card-container .service-item {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        margin: 0;
+    }
+
+    .service-process-section .card-container .col-6:last-child .service-item-card {
+        margin-bottom: 50px;
+    }
+
+    .service-process-section .card-container .service-item-card {
+        padding: 0;
+        margin: 20px 0;
+        min-height: 174.5px;
+    }
+
+    .service-process-section .card-container .service-item-card .number-circle {
+        width: 41px;
+        height: 41px;
+        top: -15px;
+        left: -15px;
+    }
+
+    .service-process-section .card-container .service-item-card .number-circle span {
+        font-size: 17.8471px;
+    }
+
+    .service-process-section .card-container .service-item-card-header {
+        min-height: 60px;
+    }
+
+    .service-process-section .card-container .service-item-card-header h4 {
+        font-size: 11.8981px;
+    }
+
+    .service-process-section .card-container .contant-sm {
+        border-radius: 20px;
+        overflow: hidden;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .service-process-section .card-container img {
+        /* width: 100%; */
+        /* border-radius: 20px; */
+        width: 123.37px;
+        height: 122.86px;
+    }
+
+
+    /* FAQ Section */
+    .faq-section {
+        min-height: auto;
+    }
+
+    .faq-section .accordion .question-logo {
+        margin: 16px;
+    }
+
+    .faq-section .accordion .question-logo h1 {
+        font-size: 32px;
+    }
+
+    .faq-section .accordion h4 {
+        font-size: 16px;
+        line-height: 150%;
+    }
+
+    .faq-section .accordion .right img {
+        margin: 20px 14px;
+    }
+
+    .faq-section .accordion .card:last-child {
+        margin-bottom: 24px;
+    }
+
+    /* What's Style Kun Section */
+    .what-style-kun-section .vector-img {
+        width: 100%;
+        position: absolute;
+        left: 0%;
+        bottom: -2%;
+        z-index: -1;
+        transform: matrix(1, 0, 0, -1, 0, 0);
+    }
+
+    .what-style-kun-section .inner-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .what-style-kun-section .inner-section img {
+        top: -30px;
+        width: 100%;
+    }
+
+    .what-style-kun-section .inner-section .inner-content-section {
+        position: relative;
+        top: -65px;
+        width: 327px;
+        min-height: 322px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .what-style-kun-section .inner-section .inner-content-section ul {
+        min-height: 267px;
+        max-width: 262px;
+        width: 100%;
+    }
+
+    .what-style-kun-section .inner-section .inner-content-section li {
+        font-size: 14.89px;
+    }
+
+    /* Footer */
+    .footer-section .logo {
+        margin-top: 40px;
+    }
+
+    .footer-section h3 {
+        font-size: 18px;
+        line-height: 160%;
+        margin-top: 40px;
+    }
+
+    .footer-section p {
+        font-size: 14px;
+        margin-top: 40px;
+    }
+
+    .footer-section h4 {
+        font-size: 12px;
+        line-height: 21px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width:400px) {
+    /* Hero Section */
+
+    .hero-section.sm {
+        min-height: 608px;
+        background-image: url('/src/assets/images/AdobeStock_319972358 3.png');
+        background-size: 100% 100%;
+        position: relative;
+        z-index: 5;
+        overflow: hidden;
+    }
+
+    .hero-section.sm .rectangle-bg {
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        z-index: 1;
+        left: -15%;
+    }
+
+    .hero-section.sm .hero-title {
+        width: 100%;
+        height: 130px;
+        position: absolute;
+        top: 33%;
+        left: -10%;
+        transform: translateY(-50%);
+        z-index: 3;
+    }
+
+    .hero-section.sm .vector-img-left {
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 2;
+    }
+
+    .hero-section.sm .vector-img-right {
+        width: 55%;
+        position: absolute;
+        right: 0;
+        top: 10%;
+        z-index: 2;
+    }
+
+    .hero-section.sm .content-wrapper {
+        min-height: 580px;
+        z-index: 5;
+        position: relative;
+    }
+
+    .hero-section.sm .inner-text {
+        min-height: 105px;
+        position: relative;
+        top: 20px;
+    }
+
+    .hero-section.sm .content-wrapper h2 {
+        -webkit-text-fill-color: white;
+        margin-top: 90px;
+        font-size: 35px;
+    }
+
+    .hero-section.sm .content-wrapper h3 {
+        font-family: 'Yu Gothic';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 120%;
+        color: white;
+    }
+
+    .hero-section.sm .content-wrapper h4 {
+        font-family: 'Yu Gothic';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 11px;
+        line-height: 130%;
+        vertical-align: middle;
+        position: relative;
+        bottom: 0;
+        top: -30px;
+        left: 140px;
+        right: 0;
+    }
+
+    .hero-section.sm .last-btn-container {
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        bottom: 0;
+        height: 300px;
+        margin-bottom: 60px;
+    }
+
+    .hero-section.sm .last-btn-container .btn-left-wrapper {
+        position: relative;
+    }
+
+    .hero-section.sm .last-btn-container .btn-left {
+        width: 263px;
+        height: 58.34px;
+        background: linear-gradient(90deg, #ED4264 -61.58%, #F36A70 -21.02%, #F33E23 3.26%, #FF7A00 100%),
+            rgba(51, 51, 51, 0.9);
+        box-shadow: 0px 2.62834px 5.25667px rgba(247, 77, 27, 0.3);
+        border-radius: 10.5133px;
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        padding: 0 10px;
+        align-items: center;
+        font-family: 'Yu Gothic';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14.4499px;
+        line-height: 175%;
+        /* overflow: hidden; */
+        color: white;
+    }
+
+    .hero-section.sm .last-btn-container .uppar-section-img {
+        position: absolute;
+        right: -25px;
+        top: -47px;
+        display: flex;
+        align-items: center;
+        z-index: 2;
+    }
+
+    .hero-section.sm .last-btn-container .uppar-section-img img:nth-child(2) {
+        width: 63.44px;
+        height: 63.44px;
+    }
+
+    .hero-section.sm .last-btn-container .btn-left .circle1 {
+        position: absolute;
+        top: -22px;
+        left: -34px;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background: rgb(255, 255, 255);
+        z-index: 7;
+    }
+
+    .hero-section.sm .last-btn-container .btn-left .circle2 {
+        position: absolute;
+        top: -27px;
+        left: -38px;
+        width: 110px;
+        height: 110px;
+        border-radius: 50%;
+        background: rgb(255, 255, 255, .6);
+        z-index: 6;
+    }
+
+    .hero-section.sm .last-btn-container .btn-left .circle3 {
+        position: absolute;
+        top: -37px;
+        left: -52px;
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, .5);
+        z-index: 5;
+    }
+
+
+    .hero-section.sm .last-btn-container .btn-grp {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .hero-section.sm .last-btn-container .btn-grp .btn-upper,
+    .hero-section.sm .last-btn-container .btn-grp .btn-lower {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'A P-OTF UD Shin Go NT Pr6N';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15.359px;
+        line-height: 165%;
+        color: #1B4884;
+    }
+
+    .hero-section.sm .last-btn-container .btn-grp .btn-upper img,
+    .hero-section.sm .last-btn-container .btn-grp .btn-lower img {
+        margin: 0 3px 0 15px;
+    }
+
+    .hero-section.sm .last-btn-container .btn-grp .btn-upper {
+        height: 44.91px;
+        background: rgba(255, 255, 255, 0.7);
+        margin-bottom: 12px;
+    }
+
+    .hero-section.sm .last-btn-container .btn-grp .btn-lower {
+        height: 44.91px;
+        background: rgba(255, 255, 255, 0.7);
+        margin-bottom: 12px;
+        position: relative;
+        bottom: 0;
+    }
+}
+
+@media (max-width:320px) {
+
+    .man-of-ability h2,
+    .strength-section h2,
+    .voice-of-achievers h2,
+    .project-summary-section h2,
+    .service-process-section h2,
+    .faq-section h2,
+    .what-style-kun-section h2 {
+        font-size: 29px;
+    }
+
+    .man-of-ability h3,
+    .strength-section h3,
+    .voice-of-achievers h3,
+    .project-summary-section h3,
+    .service-process-section h3,
+    .faq-section h3,
+    .what-style-kun-section h3 {
+        font-size: 16px;
+    }
+
+    /* man-of-ability */
+
+    .man-of-ability .ability-item-container .ability-item {
+        width: 260px;
+        min-height: 230px;
+        margin: 25px 0;
+    }
+
+    /* FAQ */
+
+    .faq-section .accordion .question-logo {
+        margin: 16px 10px;
+        padding: 3px 6px;
+    }
+
+    .faq-section .accordion h4 {
+        font-size: 15px;
+    }
+
+    .faq-section .accordion .right img {
+        margin: 28px;
+    }
+
+    /* What Style Kun */
+    .what-style-kun-section h2 {
+        font-size: 30px;
+        margin-top: 36px;
+        text-align: center;
+    }
+
+    .what-style-kun-section .inner-section .inner-content-section {
+        width: 290px;
+        top: -50px;
+    }
+}
